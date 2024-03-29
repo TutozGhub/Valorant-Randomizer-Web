@@ -95,7 +95,7 @@ h1{
 .player-article{
     display: flex;
     flex-direction: column;
-    margin: 0rem 1rem 0rem 0rem;
+    margin: 0.5rem 1rem 0.5rem 0rem;
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid #000000;
     background-color: #FFFBF5;
