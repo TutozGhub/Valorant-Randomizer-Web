@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra de desplazamiento */
+    width: 1.8vh; /* Ancho de la barra de desplazamiento */
 }
 
 ::-webkit-scrollbar-track {
@@ -14,7 +14,7 @@
 
 
 body{
-    background: #111111;
+    background: #111111 ;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header{
@@ -48,6 +48,11 @@ a{
 }
 h1{
     color: #FD4556;
+    font-size: 2em;
+}
+h2{
+    font-size: 2rem;
+    margin: 0 0 1em 0 ;
 }
 
 
@@ -61,26 +66,34 @@ h1{
     align-self: center;
     justify-content: space-around;
 
-    padding: 10% 0 10% 0;
+    padding: 2rem 0;
     background: #FD4556;
 }
 .player-input-div{
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 2rem 2rem 2rem 2rem;
-    border: 1px solid #000000;
+    margin: 1rem;
+    padding: 1.5vw 8vh;
+    border: 0.063em solid #000000;
     background-color: #FFFBF5;
     border-radius: 10px;
+    font-size: 1.2em;
 }
 .player-input{
     display: flex;
     flex-direction: column;
-    padding: 0 0 0.5rem 0
+    padding: 0 0 0.5rem 0;
+}
+#player1-input,#player2-input,#player3-input,#player4-input,#player5-input{
+    width: 13rem;
+}
+.jugadores-texto {
+    margin-bottom: 0.1rem;
 }
 #btnGenerar{
-    color: white;
-    background-color: #BD3944;
-    height: 2rem;
     width: 100%;
+    color: white;
+    background-color: #FD4556;
+    padding: 0.7rem 3rem;
+    text-align: center;
 }
 
 
@@ -110,8 +123,8 @@ h1{
     align-items: center;
 }
 .player-output-img{
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
 }
 .character-name{
     font-size: 85%;
@@ -130,8 +143,8 @@ text-transform: capitalize;
 
 
 .red-img{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .redes-div{
     display: flex;

@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    <!-- Icono -->
     <link rel="icon" href="imagenes/valorant logo.png">
+    <!-- Normalize -->
     <link rel="stylesheet" href="normalize.css">
+    <!-- Syles -->
     <link rel="stylesheet" href="style.css">
+    <!-- preload -->
+    <link rel="preload" href="style.css" as="style">
+    <!-- Descripcion -->
+    <meta name="description"
+        content="Valorant Randomizer es una herramienta que genera personajes de forma aleatoriamente para crear desafíos para los jugadores, puede agregar una capa adicional de diversión y desafío al juego.">
 
     <title>Valorant Randomizer</title>
 </head>
+
 <body>
     <header>
         <h1>VALORANT RANDOMIZER</h1>
     </header>
     <main id="main" class="main">
-            <section class="player-input-div">
-                <h2>Jugadores</h2>
+        <section class="player-input-div">
+            <h2>Jugadores</h2>
 
-                <article class="player-input">
-                    <label>Jugador 1:</label>
-                    <input id="player1-input" type="text" placeholder="Nombre">
-                </article>
-        
-                <article class="player-input">
-                    <label>Jugador 2:</label>
-                    <input id="player2-input" type="text" placeholder="Nombre">
-                </article>
-        
-                <article class="player-input">
-                    <label>Jugador 3:</label>
-                    <input id="player3-input" type="text" placeholder="Nombre">
-                </article>
-        
-                <article class="player-input">
-                    <label>Jugador 4:</label>
-                    <input id="player4-input" type="text" placeholder="Nombre">
-                </article>
-        
-                <article class="player-input">
-                    <label>Jugador 5:</label>
-                    <input id="player5-input" type="text" placeholder="Nombre">
-                </article>
-                <br>
+            <article class="player-input">
+                <label class="jugadores-texto">Jugador 1:</label>
+                <input id="player1-input" type="text" placeholder="Nombre">
+            </article>
 
-                <button id="btnGenerar" type="button">Generar</button>
-            </section>
+            <article class="player-input">
+                <label class="jugadores-texto">Jugador 2:</label>
+                <input id="player2-input" type="text" placeholder="Nombre">
+            </article>
+
+            <article class="player-input">
+                <label class="jugadores-texto">Jugador 3:</label>
+                <input id="player3-input" type="text" placeholder="Nombre">
+            </article>
+
+            <article class="player-input">
+                <label class="jugadores-texto">Jugador 4:</label>
+                <input id="player4-input" type="text" placeholder="Nombre">
+            </article>
+
+            <article class="player-input">
+                <label class="jugadores-texto">Jugador 5:</label>
+                <input id="player5-input" type="text" placeholder="Nombre">
+            </article>
+            <br>
+
+            <button id="btnGenerar" type="button">Generar</button>
+        </section>
     </main>
 
     <footer>
@@ -58,7 +67,7 @@
                 <a href="https://github.com/TutozGhub">
                     <img class="red-img" src="imagenes/github logo.png" alt=""></a>
             </div>
-                
+
             <div class="red-div">
                 <a href="https://www.linkedin.com/in/agustin-fizzano/">
                     <img class="red-img" src="imagenes/linkedin logo.png" alt=""></a>
@@ -66,7 +75,9 @@
         </div>
     </footer>
 
+        <!-- js -->
     <script src="personajes.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
