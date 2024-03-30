@@ -16,5 +16,7 @@ La funcionalidad es bastante simple, consiste en ingresar los nombres de 1 a 5 j
 
 
 ## Muestra PC y Mobile
-![PC](https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/3db3857d-837f-4119-acc8-4d49eba2fdc1)
-![Mobile](https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/49d3fbbd-deeb-4ba1-a18d-7672d55fd92e)
+<div>
+  <img src="https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/3db3857d-837f-4119-acc8-4d49eba2fdc1" width="65%"></img>
+  <img src="https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/49d3fbbd-deeb-4ba1-a18d-7672d55fd92e" width="30%"></img>
+</div>
