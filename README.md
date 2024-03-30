@@ -1,4 +1,5 @@
 # Valorant Randomizer Web
+
 >[!tip]
 >Proyecto basado en
 >[Valorant Randomizer](https://github.com/TutozGhub/Valorant-Randomizer),
@@ -20,3 +21,6 @@ La funcionalidad es bastante simple, consiste en ingresar los nombres de 1 a 5 j
   <img src="https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/3db3857d-837f-4119-acc8-4d49eba2fdc1" width="65%"></img>
   <img src="https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/49d3fbbd-deeb-4ba1-a18d-7672d55fd92e" width="30%"></img>
 </div>
+
+## Imagen
+<img src="https://github.com/TutozGhub/Valorant-Randomizer-Web/assets/114877367/31963940-d1a2-4011-ac2f-efaeb8381a9d"></img>
