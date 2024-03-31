@@ -32,39 +32,39 @@ function crearTarjeta(Agentes){
     }
     aside.id = "aside";
     const div1 = document.createElement("div");
-    div1.classList.add("player-output-div");
+    div1.classList.add("output");
 
     let jugadores = traerJugadores();
     let i = 0;
     Agentes.forEach(agente => {
         const articulo = document.createElement("article");
-        articulo.classList.add("player-article");
+        articulo.classList.add("character");
 
         const jugador = document.createElement("label");
         jugador.textContent = jugadores[i];
         console.log(jugadores);
-        jugador.classList.add("player-output-name");
+        jugador.classList.add("character--name");
         i++;
 
         const br = document.createElement("br");
 
         const div2 = document.createElement("div");
-        div2.classList.add("character-output-data");
+        div2.classList.add("character--data");
 
         const imagen = document.createElement("img");
         imagen.src = agente.img;
-        imagen.classList.add("player-output-img");
+        imagen.classList.add("character--data--img");
         
         const div3 = document.createElement("div");
-        div3.classList.add("character-output-data");
+        div3.classList.add("character--data");
 
         const personaje = document.createElement("label");
         personaje.textContent = agente.nombre;
-        personaje.classList.add("character-name");
+        personaje.classList.add("character--data--name");
 
         const rol = document.createElement("label");
         rol.textContent = agente.rol;
-        rol.classList.add("character-rol");
+        rol.classList.add("character--data--rol");
 
         aside.appendChild(div1);
         div1.appendChild(articulo);

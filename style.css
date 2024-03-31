@@ -90,7 +90,7 @@ h1{
     -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out;
     transition: background 200ms ease-in-out, color 200ms ease-in-out;
 }
-#btnGenerar:hover {
+.players__generar:hover {
     color: #ffffff;
     background-position: 100%;
 }
@@ -99,12 +99,12 @@ h1{
 
 
 
-.player-output-div{
+.output{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.player-article{
+.character{
     display: flex;
     flex-direction: column;
     margin: 0.5rem 1rem 0.5rem 0rem;
@@ -116,25 +116,25 @@ h1{
     align-items: center;
     font-size: 150%;
 }
-.character-output-data{
+.output__player--name{
+text-transform: capitalize;
+}
+.character--data{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.player-output-img{
+.character--data--img{
     width: 100px;
     height: 100px;
 }
-.character-name{
+.character--data--name{
     font-size: 85%;
     text-transform: capitalize;
 }
-.character-rol{
+.character--data--rol{
     font-size: 65%;
     text-transform: capitalize;
-}
-.player-output-name{
-text-transform: capitalize;
 }
 
 
