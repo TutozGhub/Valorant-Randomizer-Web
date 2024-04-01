@@ -1,12 +1,12 @@
 ::-webkit-scrollbar {
-    width: 10px; /* Ancho de la barra de desplazamiento */
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #111111; /* Color del fondo del track */
+    background-color: #111111;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #BD3944; /* Color de la barra de desplazamiento */
+    background-color: #BD3944;
 }
 
 
@@ -22,7 +22,6 @@ header{
     justify-content: center;
     align-items: center;
     background: #111111;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 aside{
     display: flex;
@@ -54,6 +53,14 @@ h1{
 
 
 
+.titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
 .main{
     display: flex;
     flex-wrap: wrap;
@@ -78,21 +85,22 @@ h1{
 }
 .players__generar{
     color: #ffffff;
-    background-color: #FD4556;
+    background-color: #111111;
     height: 2.5rem;
     width: 100%;
+    border: none;
 
     cursor: pointer;
     font-size: 1em;
-    background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
-    background-position: 25%;
+    background-image: linear-gradient(45deg, transparent 50%, #FD4556 50%);
+    background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out;
     transition: background 200ms ease-in-out, color 200ms ease-in-out;
 }
 .players__generar:hover {
     color: #ffffff;
-    background-position: 100%;
+    background-position: 25%; 
 }
 
 
