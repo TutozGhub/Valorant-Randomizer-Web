@@ -40,10 +40,18 @@ function crearTarjeta(Agentes){
     Agentes.forEach(agente => {
         const articulo = document.createElement("article");
         articulo.classList.add("character");
+        articulo.style = `
+        background: url(${agente.fondo}), linear-gradient(45deg, #${agente.colores[0]}, #${agente.colores[1]}, #${agente.colores[2]}, #${agente.colores[3]});
+        background-size: 200%;
+        background-position: 50% 50%;
+        background-blend-mode: overlay;
+        `;
 
         const jugador = document.createElement("label");
+        jugador.style = `
+        `;
+
         jugador.textContent = jugadores[i];
-        console.log(jugadores);
         jugador.classList.add("character--name");
         i++;
 

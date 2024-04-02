@@ -16,7 +16,9 @@ fetch(API)
   let lista = [{
     nombre: DATA.map(item => item.displayName),
     rol: DATA.map(item => item.role.displayName),
-    img: DATA.map(item => item.displayIcon)
+    img: DATA.map(item => item.displayIcon),
+    fondo: DATA.map(item => item.background),
+    colores: DATA.map(item => item.backgroundGradientColors)
   }]
 
   lista = lista[0];
@@ -28,7 +30,9 @@ fetch(API)
     agentesLista[i] = {
       nombre: lista.nombre[i],
       rol: lista.rol[i],
-      img: lista.img[i]
+      img: lista.img[i],
+      fondo: lista.fondo[i],
+      colores: lista.colores[i]
     }
   }
 
