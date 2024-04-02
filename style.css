@@ -19,9 +19,9 @@ body{
 }
 header{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
     background: #111111;
+    justify-content: center;
 }
 aside{
     display: flex;
@@ -45,16 +45,19 @@ label{
 a{
     color: #FFFBF5;
 }
-h1{
-    color: #FD4556;
+
+
+
+
+@media (max-width: 500px){
+    
+    .titulo{
+        font-size: 6svw;
+    }
 }
-
-
-
-
-
 .titulo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FD4556;
 }
 
 
