@@ -105,11 +105,13 @@ h1{
 
 
 
-@media (min-width: 648px){
+@media (min-width: 860px){
     .aside{
-        flex-basis: 60%;
-        justify-content: center;
+        flex-basis: 70%;
     }
+}
+.aside{
+    justify-content: center;
 }
 .output{
     display: flex;
