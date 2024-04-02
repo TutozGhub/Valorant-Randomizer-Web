@@ -72,8 +72,8 @@ h1{
     background: #FD4556;
 }
 .players{
-    margin: 1rem 1rem 1rem 1rem;
-    padding: 2rem 2rem 2rem 2rem;
+    margin: auto;
+    padding: 2rem 2rem;
     border: 1px solid #000000;
     background-color: #FFFBF5;
     border-radius: 10px;
@@ -85,18 +85,18 @@ h1{
 }
 .players__generar{
     color: #ffffff;
-    background-color: #111111;
+    background-color: #FD4556;
     height: 2.5rem;
     width: 100%;
     border: none;
 
     cursor: pointer;
     font-size: 1em;
-    background-image: linear-gradient(45deg, transparent 50%, #FD4556 50%);
+    background-image: linear-gradient(-45deg, transparent 50%, #111111 50%);
     background-position: 100%;
     background-size: 400%;
-    -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out;
-    transition: background 200ms ease-in-out, color 200ms ease-in-out;
+    -webkit-transition: background 400ms ease-in-out, color 400ms ease-in-out;
+    transition: background 400ms ease-in-out, color 400ms ease-in-out;
 }
 .players__generar:hover {
     color: #ffffff;
@@ -105,8 +105,12 @@ h1{
 
 
 
-
-
+@media (min-width: 648px){
+    .aside{
+        flex-basis: 60%;
+        justify-content: center;
+    }
+}
 .output{
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +119,7 @@ h1{
 .character{
     display: flex;
     flex-direction: column;
-    margin: 0.5rem 1rem 0.5rem 0rem;
+    margin: 0.2rem 0.2rem;
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid #000000;
     background-color: #FFFBF5;

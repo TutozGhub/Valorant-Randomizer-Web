@@ -31,6 +31,7 @@ function crearTarjeta(Agentes){
         oldOutput.outerHTML = "";
     }
     aside.id = "aside";
+    aside.classList = "aside"
     const div1 = document.createElement("div");
     div1.classList.add("output");
 
