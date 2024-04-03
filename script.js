@@ -1,8 +1,10 @@
 // objetos
 const btnGenerar = document.getElementById("btnGenerar");
+const chcDarkmode = document.getElementById("darkmode");
 
 // eventos
 btnGenerar.addEventListener("click", Random);
+chcDarkmode.addEventListener("click", DarkMode);
 load();
 
 // variables
@@ -48,8 +50,6 @@ function crearTarjeta(Agentes){
         `;
 
         const jugador = document.createElement("label");
-        jugador.style = `
-        `;
 
         jugador.textContent = jugadores[i];
         jugador.classList.add("character--name");
@@ -131,10 +131,52 @@ function load(){
             p.value = localStorage.getItem("Nombre" + i);
         }
     }
+    
+    const mode = localStorage.getItem("darkmode");
+    if (mode == null){
+        localStorage.setItem("darkmode", 0);
+    }
+    chcDarkmode.checked = parseInt(mode);
+    DarkMode();
 }
 function save(){
     for (let i = 1; i <= 5; i++) {
         const p = document.getElementById("player" + i + "-input");
         localStorage.setItem("Nombre" + i, p.value);
     }
+}
+function DarkMode(){
+    const body = document.getElementById("body");
+    if (chcDarkmode.checked){
+        body.style = `
+        --Rojo1: #292929;
+        --Rojo2: #BD3944;
+        --RojoTitulo: #FD4556;
+        --Gris1: #111;
+        --Gris2: #292929;
+        --Blanco: #111;
+        --TextosNegros: #fff;
+        --TextosBlancos: #000;
+        --TextoBoton: #fff;
+        --CoverturaBoton: #fff;
+        `
+        localStorage.setItem('darkmode', 1);
+        chcDarkmode.checked = 1;
+    }
+    else{
+        body.style = `
+        --Rojo1: #FD4556;
+        --Rojo2: #BD3944;
+        --RojoTitulo: var(--Rojo1);
+        --Gris1: #111;
+        --Gris2: #292929;
+        --Blanco: #ece8e1;
+        --TextosNegros: #000;
+        --TextosBlancos: #fff;
+        --TextoBoton: #fff;
+        --CoverturaBoton: #0f1923;
+        `
+        localStorage.setItem('darkmode', 0);
+    }
+    console.log(localStorage.getItem("darkmode"));
 }

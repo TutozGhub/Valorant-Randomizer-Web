@@ -16,20 +16,23 @@
 body{
     --Rojo1: #FD4556;
     --Rojo2: #BD3944;
+    --RojoTitulo: var(--Rojo1);
     --Gris1: #111;
-    --Gris2: #222;
-    --FondoChar: #c7f458ff;
-    --Blanco: #fff;
-    --Negro: #000;
+    --Gris2: #292929;
+    --Blanco: #ece8e1;
+    --TextosNegros: #000;
+    --TextosBlancos: #fff;
+    --TextoBoton: #fff;
+    --CoverturaBoton: #0f1923;
 
     background: var(--Gris1);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
     flex-wrap: nowrap;
     background: var(--Gris1);
-    justify-content: center;
 }
 aside{
     display: flex;
@@ -45,13 +48,16 @@ footer{
     padding: 2rem 2rem 2rem 2rem;
 }
 p{
-    color: var(--Blanco1);
+    color: var(--TextosBlancos);
 }
 label{
-    color: var(--Negro);
+    color: var(--TextosNegros);
 }
 a{
-    color: var(--Blanco1);
+    color: var(--TextosBlancos);
+}
+h2{
+    color: var(--TextosNegros);
 }
 
 
@@ -65,7 +71,63 @@ a{
 }
 .titulo{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--Rojo1);
+    color: var(--RojoTitulo);
+    grid-column: 2;
+    margin: 1rem auto;
+    padding: auto;
+    justify-self: center;
+}
+.darkmode{
+    grid-column: 3;
+    align-self: center;
+    justify-self: center;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #666;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--Blanco);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #666;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
 }
 
 
@@ -85,7 +147,7 @@ a{
 .players{
     margin: auto;
     padding: 2rem 2rem;
-    border: 1px solid var(--Negro);
+    border: 1px solid var(--TextosNegros);
     background-color: var(--Blanco);
     border-radius: 10px;
 }
@@ -95,7 +157,7 @@ a{
     padding: 0 0 0.5rem 0
 }
 .players__generar{
-    color: var(--Blanco);
+    color: var(--TextoBoton);
     background-color: var(--Rojo1);
     height: 2.5rem;
     width: 100%;
@@ -103,14 +165,14 @@ a{
 
     cursor: pointer;
     font-size: 1em;
-    background-image: linear-gradient(-45deg, transparent 50%, var(--Negro) 50%);
+    background-image: linear-gradient(-45deg, transparent 50%, var(--CoverturaBoton) 50%);
     background-position: 100%;
     background-size: 400%;
     -webkit-transition: background 400ms ease-in-out, color 400ms ease-in-out;
     transition: background 400ms ease-in-out, color 400ms ease-in-out;
 }
 .players__generar:hover {
-    color: var(--Blanco);
+    color: var(--TextosBlancos);
     background-position: 25%; 
 }
 
@@ -131,7 +193,7 @@ a{
 }
 .character{
     display: flex;
-    border: 1px solid var(--Negro);
+    border: 1px solid var(--TextosNegros);
     border-radius: 10px;
     margin: 0.2rem 0.2rem;
     padding: 1rem 2rem 1rem 2rem;
@@ -140,15 +202,15 @@ a{
     align-items: center;
     font-size: 150%;
     text-shadow:
-    0 0 2px var(--Negro),
-    0 0 2px var(--Negro),
-    0 0 2px var(--Negro),
-    0 0 5px var(--Negro),
-    0 0 5px var(--Negro),
-    0 0 5px var(--Negro),
-    0 0 10px var(--Negro),
-    0 0 10px var(--Negro),
-    0 0 10px var(--Negro);
+    0 0 2px var(--TextosNegros),
+    0 0 2px var(--TextosNegros),
+    0 0 2px var(--TextosNegros),
+    0 0 5px var(--TextosNegros),
+    0 0 5px var(--TextosNegros),
+    0 0 5px var(--TextosNegros),
+    0 0 10px var(--TextosNegros),
+    0 0 10px var(--TextosNegros),
+    0 0 10px var(--TextosNegros);
     -webkit-text-fill-color: var(--Blanco);
 }
 .output__player--name{
